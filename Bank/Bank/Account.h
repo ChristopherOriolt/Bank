@@ -14,7 +14,7 @@ class Account {
 private:
 	Customer * customer; 
 	double Balance = 0.00;
-	int AccountNumber;
+	int AccountNumber = 0;
 	Transaction[] TransactionArray;
 public:
 	double getBalance(); 

@@ -16,7 +16,7 @@ string Account::getCustomer()
 	return customer;
 }
 
-string Account::toString()
+string Account::toString() // implement customer 
 {
 	string output = ;
 	return output;
