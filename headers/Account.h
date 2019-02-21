@@ -21,8 +21,8 @@ protected:
 public:
 
 	
-	Account(Customer c, double b) {
-		customer = &c;
+	Account(Customer* c, double b) {
+		customer = c;
 		Balance = b;
 	}
 
@@ -35,20 +35,21 @@ public:
 	} 
 
 	string toString() {
-
+		string s = customer->getName() + " Balance: " + to_string(Balance) + " Account Number: " + to_string(AccountNumber);  
+		
 	}
 
-	void setCustomer(Customer c) {
-		customer = &c;
+	void setCustomer(Customer* c) {
+		customer = c;
 	}
 
 	void SetBalance(double newBalance) {
 		Balance = newBalance;
 	}
 
-	virtual void deposit(double amount) const = 0;
-	virtual void withdrawal(double amount) const = 0;
-	virtual void addInterest() const = 0;
+	virtual void deposit(double amount)=0;
+	virtual void withdrawal(double amount)=0;
+	virtual void addInterest()=0;
 };
 
 #endif

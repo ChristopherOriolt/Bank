@@ -11,7 +11,7 @@
 #define SavingsAccount_H_
 class SavingsAccount : public Account {
 public:
-    SavingsAccount(Customer c, double b) : Account(c, b) {
+    SavingsAccount(Customer* c, double b) : Account(c, b) {
         
     }
 

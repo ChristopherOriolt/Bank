@@ -11,7 +11,7 @@
 
 class CheckingAccount : public Account {
 public:
-    CheckingAccount(Customer c, double b) : Account(c, b) {
+    CheckingAccount(Customer* c, double b) : Account(c, b) {
         
     }
 

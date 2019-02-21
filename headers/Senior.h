@@ -20,12 +20,12 @@ class Senior : public Customer {
         const int OVERDRAFT_PENALTY = 1; 
     
     public:
-    /*
+    
         Senior(string n, string ad, int ag, int tn, int cn) : 
-        Customer(string n, string ad, int ag, int tn, int cn) {
-            //I have no idea if the code above works
+        Customer(n,  ad,  ag,  tn, cn) {
+            //cout << "from senior constructor";
         }
-        */
+        
 
         string getType() {
             return "senior";

@@ -11,7 +11,6 @@
 
 using namespace std;
 
-//
 class Customer {
     private:
         string name;
@@ -22,7 +21,6 @@ class Customer {
         
     
     public:
-
         Customer(string n, string ad, int ag, int tn, int cn) {
             name = n;
             address = ad;
@@ -62,8 +60,12 @@ class Customer {
         void setCustomerNumber(int c) {
             customer_number = c;
         }
+        /*
+        String to_string() {
 
-        virtual string getType();
+        }
+        */
+        virtual string getType()=0;
     };
 
 #endif
