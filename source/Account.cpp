@@ -11,18 +11,18 @@ double Account::getBalance()
 	return Balance;
 }
 
-string Account::getCustomer()
+Customer* Account::getCustomer()
 {
 	return customer;
 }
 
 string Account::toString() // implement customer 
 {
-	string output = ;
+	string output = "hello";
 	return output;
 }
 
-void Account::setCustomer(customer)
+void Account::setCustomer(Customer)
 {
 	customer = customer;
 }

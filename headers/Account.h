@@ -5,6 +5,8 @@
 /////////////////////////////////
 
 #include <iostream>
+#include "Customer.h"
+#include "Senior.h"
 using namespace std;
 
 #ifndef Account_H_
@@ -15,13 +17,23 @@ private:
 	Customer * customer; 
 	double Balance = 0.00;
 	int AccountNumber = 0;
-	Transaction[] TransactionArray;
+	//Transaction[] TransactionArray;
 public:
+
+	/*
+	Account(Customer c, double b) {
+		customer = c;
+	}
+	*/
+
 	double getBalance(); 
-	string getCustomer(); 
+	Customer* getCustomer(); 
 	string toString();
-	void setCustomer(customer);
+	void setCustomer(Customer);
 	void SetBalance(double newBalance);
+	virtual void deposit(double amount) const = 0;
+	virtual void withdrawal(double amount) const = 0;
+	virtual void addInterest() const = 0;
 };
 
 #endif

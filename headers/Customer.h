@@ -17,8 +17,8 @@ class Customer {
         string name;
         string address;
         int age;
-        int telephone_number
-        int customer_number
+        int telephone_number;
+        int customer_number;
         
     
     public:
@@ -59,7 +59,7 @@ class Customer {
         int getCustomerNumber() {
             return customer_number;
         }
-        void setCustomerNumber() {
+        void setCustomerNumber(int c) {
             customer_number = c;
         }
 
