@@ -2,23 +2,25 @@
 
 double Account::getBalance()
 {
-	return 0.0;
+	return Balance;
 }
 
 string Account::getCustomer()
 {
-	return string();
+	return customer;
 }
 
-string Account::toString()
+int Account::toString()
 {
-	return string();
+	return AccountNumber;
 }
 
 void Account::setCustomer(customer)
 {
+	customer = customer;
 }
 
-void Account::SetBalance(double)
+void Account::SetBalance(double newBalance)
 {
+	Balance = newBalance;
 }

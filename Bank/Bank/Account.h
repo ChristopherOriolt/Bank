@@ -10,16 +10,16 @@ using namespace std;
 
 class Account {
 private:
-	Customer * customer;
-	double Balance;
+	Customer * customer; 
+	double Balance = 0.00;
 	int AccountNumber;
 	Transaction[] TransactionArray;
 public:
-	double getBalance();
-	string getCustomer();
-	string toString();
+	double getBalance(); 
+	string getCustomer(); 
+	int toString();
 	void setCustomer(customer);
-	void SetBalance(double);
+	void SetBalance(double newBalance);
 };
 
 #endif
