@@ -1,0 +1,27 @@
+/////////////////////////////////////
+// Data Structures Project 1
+// Author: Christopher Oriolt
+// 2/20/2019
+/////////////////////////////////
+
+#include <iostream>
+using namespace std;
+
+#ifndef Account_H_
+#define Account_H_
+
+class Account {
+private:
+	Customer * customer; 
+	double Balance = 0.00;
+	int AccountNumber = 0;
+	Transaction[] TransactionArray;
+public:
+	double getBalance(); 
+	string getCustomer(); 
+	string toString();
+	void setCustomer(customer);
+	void SetBalance(double newBalance);
+};
+
+#endif
