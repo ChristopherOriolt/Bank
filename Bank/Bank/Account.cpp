@@ -10,9 +10,10 @@ string Account::getCustomer()
 	return customer;
 }
 
-int Account::toString()
+string Account::toString()
 {
-	return AccountNumber;
+	string output = ;
+	return output;
 }
 
 void Account::setCustomer(customer)

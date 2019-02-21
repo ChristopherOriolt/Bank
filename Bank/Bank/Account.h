@@ -17,7 +17,7 @@ private:
 public:
 	double getBalance(); 
 	string getCustomer(); 
-	int toString();
+	string toString();
 	void setCustomer(customer);
 	void SetBalance(double newBalance);
 };
