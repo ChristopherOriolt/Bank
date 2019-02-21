@@ -10,26 +10,21 @@
 #define CheckingAccount_H_
 
 class CheckingAccount : public Account {
-private:
-    Customer * customer;
-     double Balance = 0.00;
-     int AccountNumber = 0;
-     //Transaction[] TransactionArray;
- public:
+public:
     CheckingAccount(Customer c, double b) : Account(c, b) {
         
     }
 
     void deposit(double amount) {
-
+        Balance = Balance + amount;
     }
 
     void withdrawal(double amount) {
-
+        Balance = Balance - amount;
     }
-    
-    void addInterest() {
 
+    void addInterest() {
+        
     }
 };
 

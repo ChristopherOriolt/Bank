@@ -13,7 +13,7 @@ using namespace std;
 #define Account_H_
 
 class Account {
-private:
+protected:
 	Customer * customer; 
 	double Balance = 0.00;
 	int AccountNumber = 0;
