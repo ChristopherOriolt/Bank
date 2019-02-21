@@ -20,17 +20,32 @@ private:
 	//Transaction[] TransactionArray;
 public:
 
-	/*
+	
 	Account(Customer c, double b) {
-		customer = c;
+		customer = &c;
+		Balance = b;
 	}
-	*/
 
-	double getBalance(); 
-	Customer* getCustomer(); 
-	string toString();
-	void setCustomer(Customer);
-	void SetBalance(double newBalance);
+	double getBalance() {
+		return Balance;
+	} 
+
+	Customer* getCustomer() {
+		return customer;
+	} 
+
+	string toString() {
+
+	}
+
+	void setCustomer(Customer c) {
+		customer = &c;
+	}
+
+	void SetBalance(double newBalance) {
+		Balance = newBalance;
+	}
+
 	virtual void deposit(double amount) const = 0;
 	virtual void withdrawal(double amount) const = 0;
 	virtual void addInterest() const = 0;
