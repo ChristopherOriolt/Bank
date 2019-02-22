@@ -8,6 +8,7 @@
 #include "Customer.h"
 #include "Senior.h"
 #include <vector>
+#include "Transaction.h"
 using namespace std;
 
 #ifndef Account_H_
@@ -40,7 +41,7 @@ public:
 
 	string toString() {
 		string s = customer->getName() + " Balance: " + to_string(Balance) + " Account Number: " + to_string(AccountNumber);  
-		
+		return s;
 	}
 
 	void setCustomer(Customer* c) {
@@ -49,6 +50,9 @@ public:
 
 	void SetBalance(double newBalance) {
 		Balance = newBalance;
+	}
+	int getAccountNumber() {
+		return AccountNumber;
 	}
 
 	virtual void deposit(double amount)=0;
