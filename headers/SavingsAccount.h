@@ -6,6 +6,7 @@
 
 //wil this commit?
 #include "Account.h"
+#include "Transaction.h"
 
 #ifndef SavingsAccount_H_
 #define SavingsAccount_H_
@@ -16,10 +17,16 @@ public:
     }
 
     void deposit(double amount) {
+        Transaction t = Transaction(AccountNumber, "deposit", amount, "");
+        t.processTrans();
+        TransactionArray.push_back(t);
         Balance = Balance + amount;
     }
 
     void withdrawal(double amount) {
+        Transaction t = Transaction(AccountNumber, "withdrawal", amount, "");
+        t.processTrans();
+        TransactionArray.push_back(t);
         Balance = Balance - amount;
     }
 

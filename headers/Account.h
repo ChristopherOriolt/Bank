@@ -7,6 +7,7 @@
 #include <iostream>
 #include "Customer.h"
 #include "Senior.h"
+#include <vector>
 using namespace std;
 
 #ifndef Account_H_
@@ -17,6 +18,7 @@ protected:
 	Customer * customer; 
 	double Balance = 0.00;
 	int AccountNumber = 0;
+	vector<Transaction> TransactionArray;
 	//Transaction[] TransactionArray;
 public:
 
@@ -24,6 +26,8 @@ public:
 	Account(Customer* c, double b) {
 		customer = c;
 		Balance = b;
+		AccountNumber = customer->getCustomerNumber();
+		//AccountNumber = (rand() % 1000) + 1;
 	}
 
 	double getBalance() {
